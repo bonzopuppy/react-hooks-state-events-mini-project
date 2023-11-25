@@ -1,5 +1,6 @@
 import React from "react";
 
+
 function CategoryFilter({ selectedCategory, onCategoryChange, categories }) {
 
 
@@ -24,7 +25,7 @@ function CategoryFilter({ selectedCategory, onCategoryChange, categories }) {
 
   return (
     <div className="categories">
-      <h5>Category filters</h5>
+      {/* <h5>Category filters</h5> */}
       {categories.map(renderCategoryButton)}
     </div>
   );

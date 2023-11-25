@@ -19,16 +19,23 @@ function App() {
     setTasks(tasks.filter((task) => task.text !== taskText));
   }
 
+  function addTask(newTask) { 
+    setTasks([...tasks, newTask])
+  }
 
   return (
     <div className="App">
-      <h2>My tasks</h2>
+      <h2>Add Task</h2>
+      
+      <NewTaskForm 
+        categories={CATEGORIES}
+        onItemSubmit={addTask}/>
+      <h2>My Tasks</h2>
       <CategoryFilter 
         categories={CATEGORIES} 
         selectedCategory={selectedCategory} 
         onCategoryChange={changeCategory} 
       />
-      <NewTaskForm categories={CATEGORIES}/>
       <TaskList 
         tasks={tasks} 
         selectedCategory={selectedCategory}

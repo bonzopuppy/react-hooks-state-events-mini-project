@@ -26,6 +26,10 @@ code {
   max-width: 30rem;
 }
 
+h2 {
+  margin-bottom: 0.5rem;
+}
+
 h5 {
   margin-bottom: 0.25rem;
   margin-top: 0;
@@ -73,6 +77,7 @@ h5 {
   border-top: none;
   padding: 0 1rem;
   padding-bottom: 1rem;
+  padding-top: 1rem;
   border-radius: 0 0 0.5rem 0.5rem;
 }
 
@@ -112,11 +117,11 @@ h5 {
   padding: 0 0.5rem;
   margin-left: auto;
   border-radius: 0.5rem;
-  background: #ffe9ed;
+  background: #ffffff99;
   color: #ff7d7d;
-  font-weight: bolder;
+  font-weight: normal;
   font-size: 1rem;
-  border: solid #ffb1b1 0.1rem;
+  border: solid #ffb1b1 1px;
   cursor: pointer;
 }
 
@@ -126,8 +131,12 @@ h5 {
 
 .new-task-form {
   border: solid #8989ff 0.1rem;
+  border-radius: 4px;
   display: flex;
   align-items: flex-end;
+  padding: 0.7rem;
+  margin-top: 5px;
+  margin-bottom: 20px;
 }
 
 .new-task-form input[type="submit"] {
@@ -138,6 +147,8 @@ h5 {
   cursor: pointer;
   box-sizing: border-box;
   width: 7rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
 }
 
 .new-task-form select {
